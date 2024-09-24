@@ -1,0 +1,28 @@
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(45deg, #ff6b6b, #ff9e6b);
+  }
+  25% {
+    background: linear-gradient(45deg, #ff9e6b, #f9ff6b);
+  }
+  50% {
+    background: linear-gradient(45deg, #f9ff6b, #6bff9e);
+  }
+  75% {
+    background: linear-gradient(45deg, #6bff9e, #6b6bff);
+  }
+  100% {
+    background: linear-gradient(45deg, #6b6bff, #ff6b6b);
+  }
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
